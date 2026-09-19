@@ -1,0 +1,12 @@
+import { createClient } from '@   "Domain" /sdk';
+import { appParams } from '@/lib/app-params';
+
+const { appId, token, functionsVersion, appBaseUrl } = appParams;
+
+export const   "domain"    = createClient({
+  appId,
+  token,
+  functionsVersion,
+  serverUrl: '',
+  appBaseUrl
+});
